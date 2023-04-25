@@ -4,6 +4,7 @@
 # # # EEE 254 ASSIGNMENT
 # ## NAME : AIYEGBUSI OLUWAFERANMI MOFIYINFOLUWA
 # ## MATRIC NO : EEG/2019/013
+# ## LINKEDIN PROFILE : https://www.linkedin.com/in/oluwaferanmi-aiyegbusi-0952b4229/
 
 # # DIY 1
 
@@ -63,6 +64,26 @@ for i in range (3,1000):
 print (sum)
 
 
+# # DIY 4
+import matplotlib.pyplot as plt
+
+# for x = 1, 12, 123, 1234, 12345, 123456
+
+x_values = [1, 2, 3, 4, 5, 6]
+y_values = [7, 10, 15, 21, 26, 30]
+
+print (x_values)
+print (y_values)
+
+
+plt.plot(x_values, y_values)
+
+plt.xlabel("Digits")
+plt.ylabel("Guesses")
+plt.title("Number of digits vs. Number of guesses for different numbers")
+plt.show()
+
+
 # # DIY 5
 
 # In[4]:
@@ -82,6 +103,16 @@ print(log_product(10,30))
 # # DIY 6
 
 # In[ ]:
+import math
+
+def dB(gain):
+    dB_val = 20 * math.log10(gain)
+    return dB_val
+
+
+gain = 39
+dB_value = dB(gain)
+print("The gain of", gain, "is", dB_value, "dB")
 
 
 
